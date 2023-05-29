@@ -1,0 +1,29 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: $ptsans;
+
+  @media (min-width: $desctop-width) {
+    background-color: #e7e5e5;
+  }
+}
+
+.page__container {
+  @media (min-width: $desctop-width) {
+    margin: 0 auto;
+    width: 1200px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.page__main-container {
+  flex-grow: 1;
+}
+

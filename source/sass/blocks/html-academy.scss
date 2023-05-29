@@ -1,0 +1,32 @@
+
+.html-academy__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 14px;
+  line-height: 21px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+
+  & svg {
+    fill: #000000;
+  }
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:hover svg {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+
+  &:active svg {
+    fill: #b3b3b3;
+  }
+}

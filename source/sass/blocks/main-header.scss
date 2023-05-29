@@ -1,0 +1,27 @@
+.main-header {
+  display: flex;
+  justify-content: center;
+  height: 56px;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    height: auto;
+  }
+}
+
+.main-header__link {
+  position: relative;
+  display: block;
+  top: 0;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    width: 185px;
+  }
+}
+

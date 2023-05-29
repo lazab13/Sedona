@@ -1,0 +1,138 @@
+.advantages-box {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+  }
+}
+
+.advantages-box__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 18px 40px;
+  background-color: #81b3d2;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    padding: 53px 33px 31px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 400px;
+    padding: 52px 50px 51px;
+  }
+}
+
+.advantages-box__wrapper::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-right-width: 192px;
+  border-left-width: 0;
+  border-bottom: 19px solid #81b3d2;
+  top: -18px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.advantages-box__wrapper::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-right-width: 0;
+  border-left-width: 192px;
+  border-bottom: 19px solid #81b3d2;
+  top: -18px;
+  right: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.advantages-box__wrapper--another {
+  &::before {
+    display: none;
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
+.advantages-box__title {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 11px;
+
+  & br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 160px;
+    font-size: 21px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 19px;
+  }
+}
+
+.advantages-box__number {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 17px;
+
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 32px;
+  }
+}
+
+.advantages-box__description {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 194px;
+  }
+}
+
+.advantages-box__picture {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+
+  @media (min-width: $desctop-width) {
+    height: 100%;
+  }
+}
+
+.advantages-box__picture-wrapper {
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+}

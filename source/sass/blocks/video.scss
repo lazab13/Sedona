@@ -1,0 +1,72 @@
+.video {
+  padding: 0 20px;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px 40px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 62px 201px 64px 199px;
+  }
+}
+
+.video__title {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 39px;
+  }
+}
+
+.video__description {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 445px;
+    margin: 0 auto;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-bottom: 64px;
+  }
+}
+
+.video__wrapper {
+  position: relative;
+}
+
+.video__video-presentation {
+  display: block;
+  width: 100%;
+}
+
+.video__toogle {
+  position: absolute;
+  width: 48px;
+  height: 54px;
+  top: 35%;
+  left: 38%;
+  padding: 0;
+  border: none;
+  background-image: url("../img/video-toogle.png");
+  background-repeat: no-repeat;
+}
