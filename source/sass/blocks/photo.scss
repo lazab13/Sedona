@@ -3,7 +3,7 @@
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    padding: 66px 60px 58px;
+    padding: 66px 60px 56px;
   }
 
   @media (min-width: $desctop-width) {
@@ -12,16 +12,16 @@
 }
 
 .photo__wrapper {
-  padding: 0 20px 25px;
+  padding: 0 20px 36px;
   border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: $tablet-width) {
-    padding: 0 95px 67px;
+    padding: 0 95px 80px;
     border: none;
   }
 
   @media (min-width: $desctop-width) {
-    padding: 100px 280px 65px;
+    padding: 97px 280px 88px;
   }
 }
 
@@ -31,15 +31,11 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    margin-bottom: 38px;
-  }
-
-  @media (min-width: $desctop-width) {
-    margin-bottom: 43px;
+    margin-bottom: 33px;
   }
 }
 
@@ -65,7 +61,6 @@
 .photo__list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -73,7 +68,6 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0;
   }
 
   @media (min-width: $desctop-width) {
@@ -123,7 +117,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 17px 20px 17px 25px;
+    padding: 20px 20px 17px 25px;
     background-color: rgba(0, 0, 0, 0.3);
   }
 }
@@ -140,7 +134,7 @@
   }
 
   @media (min-width: $desctop-width) {
-    background-color: inherit;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -149,11 +143,7 @@
   line-height: 21px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 10px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 5px;
-  }
+  margin-bottom: 1px;
 
   @media (min-width: $desctop-width) {
     color: #ffffff;
@@ -165,7 +155,7 @@
   font-size: 14px;
   line-height: 21px;
   color: #333333;
-  margin-bottom: 11px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -187,7 +177,8 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 28px;
+    padding-left: 33px;
+    top: 32px;
     right: 20px;
   }
 
@@ -206,6 +197,11 @@
   background-size: cover;
   top: 0;
   left: 0;
+
+  @media (min-width: $tablet-width) {
+    top: -3px;
+    left: 1px;
+  }
 
   @media (min-width: $desctop-width) {
     background-image: url("../img/like-photo-desktop.svg");

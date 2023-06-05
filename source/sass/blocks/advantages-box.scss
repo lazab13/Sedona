@@ -12,18 +12,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 32px 18px 40px;
+  padding: 32px 18px 38px;
   background-color: #81b3d2;
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
     position: static;
-    padding: 53px 33px 31px;
+    padding: 54px 31px 30px;
   }
 
   @media (min-width: $desctop-width) {
     width: 400px;
-    padding: 52px 50px 51px;
+    padding: 25px 50px 26px;
   }
 }
 
@@ -62,12 +62,22 @@
 }
 
 .advantages-box__wrapper--another {
+  padding: 37px 18px;
+
   &::before {
     display: none;
   }
 
   &::after {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 52px 31px 31px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 31px 31px 31px;
   }
 }
 
@@ -82,19 +92,20 @@
 
   & br {
     display: none;
-
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
   }
 
   @media (min-width: $tablet-width) {
     width: 160px;
     font-size: 21px;
+    margin-bottom: 12px;
+
+    & br {
+      display: block;
+    }
   }
 
   @media (min-width: $desctop-width) {
-    margin-bottom: 19px;
+    margin-bottom: 10px;
   }
 }
 
@@ -103,9 +114,12 @@
   line-height: 21px;
   margin-bottom: 17px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
 
   @media (min-width: $desctop-width) {
-    margin-bottom: 32px;
+    margin-bottom: 23px;
   }
 }
 
@@ -118,11 +132,29 @@
 
   @media (min-width: $tablet-width) {
     width: 194px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 300px;
+
+    & br {
+      display: block;
+    }
+  }
+}
+
+.advantages-box__description--another {
+  @media (min-width: $desctop-width) {
+    width: 219px;
   }
 }
 
 .advantages-box__picture {
-  display: block;
+  display: flex;
   width: 100%;
   object-fit: cover;
 

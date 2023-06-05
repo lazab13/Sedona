@@ -1,6 +1,6 @@
 .search-hotel {
   background-color: #ffffff;
-  padding: 38px 18px 49px;
+  padding: 39px 18px 49px;
 
   @media (min-width: $tablet-width) {
     padding: 61px 155px 58px;
@@ -18,15 +18,11 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    margin-bottom: 30px;
-  }
-
-  @media (min-width: $desctop-width) {
-    margin-bottom: 40px;
+    margin-bottom: 33px;
   }
 }
 
