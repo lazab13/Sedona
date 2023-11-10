@@ -263,7 +263,7 @@
           </fieldset>
 
           <div class="form-user__wrapper">
-            <button class="form-user__button" type="submit">
+            <button class="form-user__button form-user__button--open-popover" type="submit">
               Отправите отзыв
             </button>
 
@@ -273,6 +273,26 @@
           </div>
         </form>
       </section>
+
+      <div class="popover popover--closed">
+        <div class="popover__box">
+          <div class="popover__content-box">
+            <h2 class="popover__title">
+              Ваш отзыв отправлен!
+            </h2>
+
+            <p class="popover__text">
+              Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.
+            </p>
+          </div>
+
+          <div class="popover__toggle-box">
+            <button class="popover__toogle popover__toogle--closed" type="button" title="Закрыть окно">
+              Закрыть окно
+            </button>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="main-footer">
@@ -327,6 +347,7 @@
   </div>
 
   <script src="./js/script.js"></script>
+  <script src="./js/popover.js"></script>
 
 </body>
 
