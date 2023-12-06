@@ -1,0 +1,158 @@
+.form-input {
+  padding: 26px 20px 35px;
+  margin: 0;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-right: 43px;
+    border-bottom: none;
+    border-right: 1px solid #e5e5e5;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding-right: 63px;
+  }
+}
+
+.form-input--icon {
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-left: 26px;
+    border: none;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding-left: 64px;
+  }
+}
+
+.form-input__title {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    text-align: right;
+    padding-right: 40px;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding-right: 103px;
+  }
+}
+
+.form-input__title--icon {
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding-left: 30px;
+  }
+}
+
+.form-input__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-input__list--icon {
+  @media (min-width: $tablet-width) {
+    padding-left: 18px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 0;
+  }
+}
+
+.form-input__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input__label {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  padding-left: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 18px;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 300px;
+    padding-left: 16px;
+  }
+}
+
+.form-input__input {
+  font-family: $ptsans;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  width: 100%;
+  color: #000000;
+  background-color: #f2f2f2;
+  outline: none;
+  padding: 16px 70px 16px 16px;
+  border: none;
+
+  &::placeholder {
+    color: #000000;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    box-shadow: 0 0 0 6px #e5e5e5 inset;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 430px;
+  }
+}
+
+.form-input__input--icon::placeholder {
+  color: #0000004d;
+}
+
+.form-input__wrapper {
+  position: relative;
+}
+
+.form-input__input--icon {
+  @media (min-width: $desctop-width) {
+    width: 403px;
+  }
+}
+
+.form-input__icon-wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  top: 0;
+  right: 0;
+}

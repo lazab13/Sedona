@@ -1,0 +1,144 @@
+.form-checkbox {
+  margin: 0;
+  padding: 24px 20px;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-bottom: 42px;
+    border: none;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding-bottom: 56px;
+  }
+}
+
+.form-checkbox__title {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+
+  & br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    font-size: 21px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+
+    & br {
+      display: block;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc(100% - 81%);
+      border: 1px solid #dbdbdb;
+      top: 46%;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: calc(100% - 81%);
+      border: 1px solid #dbdbdb;
+      top: 46%;
+      right: 0;
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    &::before {
+      width: calc(100% - 70%);
+    }
+
+    &::after {
+      width: calc(100% - 70%);
+    }
+  }
+}
+
+.form-checkbox__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 32px;
+    padding: 0 84px;
+  }
+
+  @media (min-width: $desctop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 46px;
+    padding: 31px 44px;
+  }
+}
+
+.form-checkbox__text {
+  position: relative;
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  padding: 10px 0 10px 62px;
+  cursor: pointer;
+}
+
+.form-checkbox__text::before {
+  content: "";
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  top: 0;
+  left: 0;
+}
+
+.form-checkbox__text::after {
+  content: "";
+  position: absolute;
+  display: none;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/check-mark.svg");
+  background-repeat: no-repeat;
+  top: 14px;
+  left: 12px;
+}
+
+.form-checkbox__input:checked + .form-checkbox__text::after {
+  display: block;
+}
+
+.form-checkbox__text:hover::before {
+  background: #e5e5e5;
+}
+
+.form-checkbox__text:active::before {
+  background: #d5d5d5;
+}
+
+.form-checkbox__text:active::after {
+  opacity: 0.3;
+}
+
+.form-checkbox__input:focus + .form-checkbox__text::before {
+  border: 1px solid #928d8d;
+}

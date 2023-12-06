@@ -1,0 +1,135 @@
+.form-radio {
+  margin: 0;
+  padding: 24px 20px;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-bottom: 49px;
+    border: none;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding-bottom: 56px;
+  }
+}
+
+.form-radio__title {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    font-size: 21px;
+    margin-bottom: 28px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc(100% - 81%);
+      border: 1px solid #dbdbdb;
+      top: 44%;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: calc(100% - 81%);
+      border: 1px solid #dbdbdb;
+      top: 44%;
+      right: 0;
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    &::before {
+      width: calc(100% - 70%);
+    }
+
+    &::after {
+      width: calc(100% - 70%);
+    }
+  }
+}
+
+.form-radio__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 0 36px;
+  }
+
+  @media (min-width: $desctop-width) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 58px;
+    padding: 17px 53px;
+  }
+}
+
+.form-radio__text {
+  position: relative;
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  padding: 10px 0 10px 62px;
+  cursor: pointer;
+}
+
+.form-radio__text::before {
+  content: "";
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  top: 0;
+  left: 0;
+}
+
+.form-radio__text::after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #333333;
+  top: 14px;
+  left: 15px;
+}
+
+.form-radio__input:checked + .form-radio__text::after {
+  opacity: 1;
+}
+
+.form-radio__text:hover::before {
+  background: #e5e5e5;
+}
+
+.form-radio__text:active::before {
+  background: #d5d5d5;
+}
+
+.form-radio__text:active::after {
+  background-color: rgba(51, 51, 51, 0.3);
+}
+
+.form-radio__input:focus + .form-radio__text::before {
+  border: 1px solid #928d8d;
+}
