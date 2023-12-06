@@ -6,7 +6,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-bottom: 48px;
+    padding-bottom: 49px;
     border: none;
   }
 
@@ -31,18 +31,18 @@
     &::before {
       content: "";
       position: absolute;
-      width: calc(100% - 80%);
+      width: calc(100% - 81%);
       border: 1px solid #dbdbdb;
-      top: 50%;
+      top: 44%;
       left: 0;
     }
 
     &::after {
       content: "";
       position: absolute;
-      width: calc(100% - 80%);
+      width: calc(100% - 81%);
       border: 1px solid #dbdbdb;
-      top: 50%;
+      top: 44%;
       right: 0;
     }
   }
@@ -75,7 +75,7 @@
 
   @media (min-width: $desctop-width) {
     grid-template-columns: repeat(3, 1fr);
-    gap: 28px;
+    gap: 58px;
     padding: 17px 53px;
   }
 }
@@ -110,8 +110,8 @@
   height: 16px;
   border-radius: 50%;
   background-color: #333333;
-  top: 16px;
-  left: 16px;
+  top: 14px;
+  left: 15px;
 }
 
 .form-radio__input:checked + .form-radio__text::after {

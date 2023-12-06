@@ -7,7 +7,7 @@
   background-color: #8392c4;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 -164px;
+  background-position: 0 -231px;
   padding: 52px 46px 67px 45px;
 
   @media (min-resolution: 2dppx) {
@@ -16,7 +16,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/promo-background-tablet.png");
-    background-position: 0 -219px;
+    background-position: 0 -228px;
     padding: 95px 154px 117px 157px;
 
     @media (min-resolution: 2dppx) {
@@ -26,6 +26,7 @@
 
   @media (min-width: $desctop-width) {
     background-image: url("../img/promo-background-desktop.png");
+    background-position: 0 -218px;
     padding: 101px 371px 120px 369px;
 
     @media (min-resolution: 2dppx) {

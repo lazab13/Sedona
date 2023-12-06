@@ -27,11 +27,11 @@
   @media (min-width: $tablet-width) {
     width: 256px;
     flex-grow: 1;
-    padding: 60px 33px;
+    padding: 61px 33px;
   }
 
   @media (min-width: $desctop-width) {
-    padding: 69px 50px;
+    padding: 49px 50px 68px;
   }
 }
 
@@ -48,7 +48,7 @@
   @media (min-width: $tablet-width) {
     width: 77px;
     height: 77px;
-    top: 60px;
+    top: 58px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -68,7 +68,21 @@
 
 .advantages-description__item--souvenirs::before {
   background-image: url("../img/souvenirs.svg");
+
+  @media (min-width: $tablet-width) {
+    top: 63px;
+    left: 51%;
+  }
+
+  @media (min-width: $desctop-width) {
+    width: 93px;
+    height: 90px;
+    background-size: 96px 83px;
+    top: 64px;
+    left: 49%;
+  }
 }
+
 
 .advantages-description__title {
   font-size: 18px;
@@ -81,13 +95,23 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
     text-align: center;
-    margin-top: 98px;
-    margin-bottom: 20px;
+    margin-top: 97px;
+    margin-bottom: 23px;
   }
 
   @media (min-width: $desctop-width) {
-    margin-top: 107px;
-    margin-bottom: 35px;
+    margin-top: 120px;
+    margin-bottom: 23px;
+  }
+}
+
+.advantages-description__title--another {
+  @media (min-width: $tablet-width) {
+    margin-top: 91px;
+  }
+
+  @media (min-width: $desctop-width) {
+    margin-top: 121px;
   }
 }
 
@@ -98,7 +122,28 @@
   text-transform: uppercase;
   margin: 0;
 
+  & br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     text-align: center;
+
+    & br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desctop-width) {
+    & br {
+      display: none;
+    }
+  }
+}
+
+.advantages-description__text--another {
+  @media (min-width: $desctop-width) {
+    width: 216px;
+    margin: 0 auto;
   }
 }

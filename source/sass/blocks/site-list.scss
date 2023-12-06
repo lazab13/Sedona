@@ -93,12 +93,16 @@
 
 .site-list__link--current {
   @media (min-width: $tablet-width) {
-    padding: 18px 47px 17px 48px;
     color: #766357;
-  }
-
-  @media (min-width: $desctop-width) {
-    padding: 18px 68px;
   }
 }
 
+.site-list__link--index {
+  @media (min-width: $tablet-width) {
+    padding: 18px 47px 17px 48px;
+  }
+
+  @media (min-width: $desctop-width) {
+    padding: 18px 90px;
+  }
+}
